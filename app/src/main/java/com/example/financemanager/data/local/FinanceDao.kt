@@ -22,9 +22,12 @@ interface FinanceDao {
 
     @Query(
         """
-            Select * from transactionentity
+            SELECT * FROM transactionentity ORDER BY timeOfTransaction DESC
         """
     )
     suspend fun getAllFinances() : List<TransactionEntity>
+
+    @Query("DELETE FROM transactionentity WHERE timeOfTransaction = :time")
+    fun deleteByUserId(time: Long)
 
 }

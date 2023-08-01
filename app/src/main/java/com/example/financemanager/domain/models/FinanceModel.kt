@@ -6,8 +6,17 @@ package com.example.financemanager.domain.models
         data > local > entities
  */
 data class TransactionModel(
-    val timeOfTransaction: Long,
-    val wasDebit: Boolean,
-    val wasCredit: Boolean,
-    val amount: Long
+    var timeOfTransaction: Long,
+    var wasDebit: Boolean,
+    var wasCredit: Boolean,
+    var amount: Long,
+    var title: String,
+    var about: String,
+    var dayInfo: String
+)
+
+data class CalculatedData(
+    val CurrentBalance: Long,
+    val numberOfCredits: Int,
+    val numberOfDebits:Long
 )

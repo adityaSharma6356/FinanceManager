@@ -8,7 +8,9 @@ fun TransactionModel.toTransactionEntity(): TransactionEntity{
         timeOfTransaction = timeOfTransaction,
         wasCredit = wasCredit,
         wasDebit = wasDebit,
-        amount = amount
+        amount = amount,
+        title = title,
+        about = about
     )
 }
 
@@ -17,6 +19,9 @@ fun TransactionEntity.toTransactionModel(): TransactionModel{
         timeOfTransaction = timeOfTransaction,
         wasCredit = wasCredit,
         wasDebit = wasDebit,
-        amount = amount
+        amount = amount,
+        title = title,
+        about = about,
+        dayInfo = ""
     )
 }

@@ -6,7 +6,7 @@ import androidx.room.RoomDatabase
 
 @Database(
     entities = [TransactionEntity::class],
-    version = 1
+    version = 2
 )
 abstract class FinanceDatabase: RoomDatabase() {
     abstract val dao: FinanceDao

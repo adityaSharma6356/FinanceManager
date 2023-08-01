@@ -9,5 +9,7 @@ data class TransactionEntity(
     val timeOfTransaction: Long,
     val wasDebit: Boolean,
     val wasCredit: Boolean,
-    val amount: Long
+    val amount: Long,
+    val title: String,
+    val about: String,
 )
