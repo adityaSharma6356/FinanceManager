@@ -28,44 +28,6 @@ import com.example.financemanager.ui.theme.customFont
 fun MainScreen(
     mainViewModel: MainViewModel
 ) {
-//    AnimatedVisibility(
-//        enter = fadeIn(tween(200)),
-//        exit = fadeOut(tween(200)),
-//        modifier = Modifier
-//            .zIndex(10f)
-//            .padding(top = 110.dp)
-//            .fillMaxWidth(),
-//        visible = mainViewModel.state.menuOpen) {
-//        Column(modifier = Modifier.fillMaxWidth().background(Color.Black), horizontalAlignment = Alignment.CenterHorizontally) {
-//            Box(modifier = Modifier.padding(10.dp, 10.dp).fillMaxWidth().background(Color.White, RoundedCornerShape(15.dp)), contentAlignment = Alignment.Center) {
-//                Text(
-//                    text = "Manage Finances",
-//                    fontFamily = customFont,
-//                    fontWeight = FontWeight.Light,
-//                    fontSize = 20.sp,
-//                    color = Color(0, 0, 0, 134),
-//                )
-//            }
-//            Box(modifier = Modifier.padding(10.dp, 10.dp).fillMaxWidth().background(Color.White, RoundedCornerShape(15.dp)), contentAlignment = Alignment.Center) {
-//                Text(
-//                    text = "Financial Advisor",
-//                    fontFamily = customFont,
-//                    fontWeight = FontWeight.Light,
-//                    fontSize = 20.sp,
-//                    color = Color(0, 0, 0, 134),
-//                )
-//            }
-//            Box(modifier = Modifier.padding(10.dp, 10.dp).fillMaxWidth().background(Color.White, RoundedCornerShape(15.dp)), contentAlignment = Alignment.Center) {
-//                Text(
-//                    text = "Read and Discover",
-//                    fontFamily = customFont,
-//                    fontWeight = FontWeight.Light,
-//                    fontSize = 20.sp,
-//                    color = Color(0, 0, 0, 134),
-//                )
-//            }
-//        }
-//    }
     Card(
         colors = CardDefaults.cardColors(containerColor = Color.White),
         shape = RoundedCornerShape(30.dp, 30.dp, 30.dp, 30.dp),
